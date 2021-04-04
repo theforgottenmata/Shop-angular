@@ -1,10 +1,12 @@
 <div class="card mh-75 mb-4 shadow-sm ">
   <h1>{{ productItem.name }}</h1>
-  <img class="bd-placeholder-img card-img-top p-2" width="100%" [src]="productItem.imageUrl" />
+  <img alt="" class="bd-placeholder-img card-img-top p-2" width="100%" [src]="productItem.imageUrl" />
 
   <div class="card-body">
     <p class="card-text">
       <strong>{{ productItem.price | currency:'CZK' }}</strong>
+      <i *ngIf="addedToWishlist" class="fas fa-heart float-right" (click)="handleRemoveFromWishlist()"></i>
+      <i *ngIf="!addedToWishlist" class="far fa-heart float-right" (click)="handleAddToWishlist()"></i>
     </p>
     <p class="card-text">{{ productItem.description }}</p>
     <div class="d-flex justify-content-between align-items-center">

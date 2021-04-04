@@ -25,3 +25,21 @@
 .product-btn {
   font-size: smaller;
 }
+
+.fa-heart{
+  color: #fa4ba4;
+  cursor: pointer;
+}
+
+.guest-form-card h2{
+  text-transform: uppercase;
+  font-size: medium;
+  padding-top: 30px;
+}
+.guest-form-card label{
+  font-size: small;
+}
+.btn-primary.disabled, .btn-primary:disabled{
+  background-color: red;
+  cursor: not-allowed;
+}

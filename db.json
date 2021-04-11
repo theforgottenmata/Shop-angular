@@ -46,7 +46,14 @@
   "profile": {
     "name": "typicode"
   },
-  "wishlist": [],
+  "wishlist": [
+    {
+      "id": 1
+    },
+    {
+      "id": 2
+    }
+  ],
   "cart": [
     {
       "product": {
@@ -70,33 +77,43 @@
     },
     {
       "product": {
-        "id": 3,
-        "name": "Pants",
-        "description": "Descr3",
-        "imageUrl": "https://ufpro.com/storage/app/media/Product%20Images/Pants/P-40%20Urban/Product%20images/Kangaroo/p40-urban-pants-kangaroo-hero-2019-610.jpg",
-        "price": 800
-      },
-      "id": 3
-    },
-    {
-      "product": {
-        "id": 1,
-        "name": "Hoodie",
-        "description": "Descr1",
-        "imageUrl": "https://www.pasnormalstudios.com/shared/16/615/pas-normal-studios-logo-hoodie-black_1180w.jpg",
-        "price": 1500
-      },
-      "id": 4
-    },
-    {
-      "product": {
-        "id": 1,
-        "name": "Hoodie",
-        "description": "Descr1",
-        "imageUrl": "https://www.pasnormalstudios.com/shared/16/615/pas-normal-studios-logo-hoodie-black_1180w.jpg",
-        "price": 1500
+        "id": 2,
+        "name": "T-shirt",
+        "description": "Descr2",
+        "imageUrl": "https://www.jackjones.com/dw/image/v2/ABBT_PRD/on/demandware.static/-/Sites-pim-catalog/default/dw54431423/pim-static/large/12059219_OPTWHITE_002_ProductLarge.jpg?sw=685",
+        "price": 500
       },
       "id": 5
+    },
+    {
+      "product": {
+        "id": 2,
+        "name": "T-shirt",
+        "description": "Descr2",
+        "imageUrl": "https://www.jackjones.com/dw/image/v2/ABBT_PRD/on/demandware.static/-/Sites-pim-catalog/default/dw54431423/pim-static/large/12059219_OPTWHITE_002_ProductLarge.jpg?sw=685",
+        "price": 500
+      },
+      "id": 7
+    },
+    {
+      "product": {
+        "id": 1,
+        "name": "Hoodie",
+        "description": "Descr1",
+        "imageUrl": "https://www.pasnormalstudios.com/shared/16/615/pas-normal-studios-logo-hoodie-black_1180w.jpg",
+        "price": 1500
+      },
+      "id": 8
+    },
+    {
+      "product": {
+        "id": 1,
+        "name": "Hoodie",
+        "description": "Descr1",
+        "imageUrl": "https://www.pasnormalstudios.com/shared/16/615/pas-normal-studios-logo-hoodie-black_1180w.jpg",
+        "price": 1500
+      },
+      "id": 9
     }
   ]
 }

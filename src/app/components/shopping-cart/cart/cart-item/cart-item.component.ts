@@ -1,6 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
-import {CartItem} from '../../../../models/cart-item';
-import {MessengerService} from '../../../../services/messenger.service';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 import {CartService} from '../../../../services/cart.service';
 
 @Component({
@@ -11,16 +9,17 @@ import {CartService} from '../../../../services/cart.service';
 export class CartItemComponent implements OnInit {
 
   @Input() cartItem: any;
+  @Output() deletedUser: EventEmitter<boolean> = new EventEmitter();
 
   constructor(private cartService: CartService) { }
 
   ngOnInit() {
   }
 
-  handleRemoveItem(){
-    this.cartService.removeFromCart(this.cartItem.id).subscribe(
-      () => console.log(`deleted ${this.cartItem.id}`)
-    );
+  onDelete(userId: Number){
+    this.cartService.deleteItem(userId).subscribe((data) => {
+      this.deletedUser.emit(true);
+    })
   }
 }
 

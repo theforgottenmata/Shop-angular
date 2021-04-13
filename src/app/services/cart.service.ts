@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import {HttpClient, HttpHeaders} from '@angular/common/http';
 import { Observable } from 'rxjs';
 import {catchError, map} from 'rxjs/operators';
 
@@ -43,8 +43,12 @@ export class CartService {
   addProductToCart(product: Product): Observable<any> {
     return this.http.post(cartUrl, { product });
   }
-  removeFromCart(productId: Product): Observable<any>{
-    return this.http.delete(cartUrl + '/' + productId).pipe(catchError(this.removeFromCart));
+
+
+
+  deleteItem(cartId):Observable<string>{
+    return this.http.delete<string>(cartUrl+ "/" +cartId)
+
   }
 
 

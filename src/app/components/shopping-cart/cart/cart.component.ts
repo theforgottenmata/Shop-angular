@@ -20,6 +20,9 @@ export class CartComponent implements OnInit {
   ngOnInit() {
     this.handlerSubscription();
     this.loadCartItems();
+    this.cartService.getCartItems().subscribe(cartItems => {
+      this.cartItems = cartItems;
+    })
   }
 
   handlerSubscription(){
@@ -41,7 +44,7 @@ export class CartComponent implements OnInit {
       this.cartTotal += (item.qty * item.price);
     });
   }
-
-
-
+  reloadCurrentPage(){
+    this.loadCartItems()
+  }
 }
